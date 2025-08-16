@@ -64,8 +64,8 @@ The objective of this project is to develop a scalable and comprehensive invento
 
 ## 📸 Sample Visuals
 
-[![Dashboard Snapshot](./images/Screenshot%202025-08-16%20090356.jpg)](https://github.com/sufrimo/Inventory-Management-Dashboard/blob/main/Screenshot%202025-08-16%20090356.jpg
-)
+![Dashboard Snapshot](https://raw.githubusercontent.com/sufrimo/Inventory-Management-Dashboard/main/Screenshot%202025-08-16%20090356.jpg)
+
 
 ---
 
