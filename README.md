@@ -1,5 +1,5 @@
 # Inventory-Management-Dashboard
-An Excel-based inventory management dashboard that tracks expired products, stockouts, supplier lead times, fulfillment time, and warehouse utilization using Power Query, Power Pivot, and interactive visualizations.
+An Excel-based inventory management dashboard that tracks expired products, stockouts, supplier lead times, fulfillment times, and warehouse utilization. Utilizing Power Query and Power Pivot, it enables powerful data processing and analysis combined with interactive visualizations for real-time insights. The system also automates purchase order generation, supports printing, and converts orders to PDF for easy sharing and record-keeping.
 
 ## 🚀 Project Goal
 
@@ -9,7 +9,8 @@ The objective of this project is to develop a scalable and comprehensive invento
 - Identify the most frequently stocked-out products  
 - Analyze average supplier lead times  
 - Track average order fulfillment time  
-- Evaluate warehouse space utilization  
+- Evaluate warehouse space utilization
+- Streamline procurement through automated purchase order generation, printing, and PDF conversion using VBA
 
 ---
 
@@ -20,7 +21,8 @@ The objective of this project is to develop a scalable and comprehensive invento
 - Custom columns for performance tracking  
 - PivotTables and PivotCharts for dynamic insights  
 - Interactive dashboard with slicers and charts  
-- Power Pivot data model integration  
+- Power Pivot data model integration
+- VBA automation for purchase order creation, printing, and PDF export to facilitate procurement processes
 
 ---
 
@@ -58,34 +60,51 @@ The objective of this project is to develop a scalable and comprehensive invento
   - Flag expired products  
 
 ### 4. Create Interactive Dashboard
-- Include slicers for **Store ID**  
+- Include slicers for **Store ID**
+  
+### 5. VBA Script and Form Control
+- Write VBA macros to automate key tasks:
+
+  - **CreatePurchaseOrder** — Generates purchase orders automatically.
+
+  - **PrintAllPurchaseOrders** — Prints all purchase orders directly from Excel.
+
+  - **ConvertPurchaseOrdersToPDF** — Exports purchase orders as PDF files for easy sharing and archiving.
+- Insert Form Controls (buttons) on the dashboard and assign these macros:
+
+  - A **“Create Purchase Order”** Form Control to run `CreatePurchaseOrder`.
+
+  - A **“Print All”** Form Control to run `PrintAllPurchaseOrders`.
+
+  - A **“Convert to PDF”** Form Control to run `ConvertPurchaseOrdersToPDF`.
 
 ---
 
 ## 📸 Sample Visuals
 
-![Dashboard Snapshot](https://raw.githubusercontent.com/sufrimo/Inventory-Management-Dashboard/main/Screenshot%202025-08-16%20090356.jpg)
+![Dashboard Snapshot](https://github.com/sufrimo/Inventory-Monitoring-with-Automated-Purchase-Order-Generation-Using-VBA/raw/main/Inventory%20Dashboard.jpg)
 
 
 ---
 
 ## 🧠 Tools & Technologies
 
-- Microsoft Excel (Power Query + Power Pivot)  
-- PivotTables & Charts  
+- Microsoft Excel (Power Query + Power Pivot + VBA Macro)  
+- PivotTables & Charts
+-   
 
 ---
 
 ## ✅ To-Do / Future Enhancements
 
-- 🔄 **Integrate with Sales Records for Live Inventory**  
-  Link inventory levels with real-time or periodic sales data to track stock depletion accurately.
+🔄 Integrate with Sales Records for Live Inventory
+Link inventory levels with real-time or periodic sales data to track stock depletion accurately.
 
-- 🚨 **Alert When Stocks Fall to Reorder Level**  
-  Use conditional formatting or formulas to trigger low-stock alerts and prevent stockouts.
+🚨 Alert When Stocks Fall to Reorder Level
+Use conditional formatting or formulas to trigger low-stock alerts and prevent stockouts.
 
-- 📝 **Set Up Automatic Purchase Order List via VBA Macro**  
-  Generate purchase order suggestions automatically based on reorder points and lead times, using Excel VBA.
+📦 Integrate Order Quantity Data for Automatic Purchase Orders
+Pull order quantity and reorder level data from purchase requisitions, sales forecasts, or historical order records to automatically generate purchase orders when stock reaches reorder thresholds.
 
 ---
 
